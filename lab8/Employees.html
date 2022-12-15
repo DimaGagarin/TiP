@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <title>Lab 8 Ex 2</title>
+</head>
+
+<body>
+    <form name="form1">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" value="Ivanov" name="name">
+                </td>
+                <td>
+                    <input type="date" value="2001-01-02" name="year">
+                </td>
+                <td>
+                    <input type="number" value="1" name="duration">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" value="Vasilkov" name="name">
+                </td>
+                <td>
+                    <input type="date" value="2000-03-15" name="year">
+                </td>
+                <td>
+                    <input type="number" value="7" name="duration">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" value="Petrov" name="name">
+                </td>
+                <td>
+                    <input type="date" value="1997-02-17" name="year">
+                </td>
+                <td>
+                    <input type="number" value="3" name="duration">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" value="Givirov" name="name">
+                </td>
+                <td>
+                    <input type="date" value="2024-02-29" name="year">
+                </td>
+                <td>
+                    <input type="number" value="999" name="duration">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="ContractYearTime(yearTime)">Year time</button>
+                </td>
+                <td>
+                    <select name="yearTime">
+                        <option name="summer">Summer</option>
+                        <option name="autumn">Autumn</option>
+                        <option name="winter">Winter</option>
+                        <option name="spring">Spring</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="ContractQuartal(quartalTime)">Quartal</button>
+                </td>
+                <td>
+                    <select name="quartalTime">
+                        <option name="first">1th</option>
+                        <option name="second">2th</option>
+                        <option name="third">3th</option>
+                        <option name="fourth">4th</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="ContractDurationTime(startAt, endAt)">Duration</button>
+                </td>
+                <td>
+                    <input type="date" value="2000-08-08" name="startAt">
+                </td>
+                <td>
+                    <input type="date" value="2002-04-10" name="endAt">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="ContractEndAt(accurDate)">End at</button>
+                </td>
+                <td>
+                    <input type="date" value="2002-01-02" name="accurDate">
+                </td>         
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

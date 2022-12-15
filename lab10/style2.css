@@ -1,0 +1,14 @@
+body{
+    margin: auto;
+    margin-top: 50px;
+    width: 700px;
+    background-color: darkturquoise;
+}
+table{
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+}

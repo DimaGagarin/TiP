@@ -1,0 +1,55 @@
+body{
+    margin: auto;
+    width: 500px;
+    background-color: blanchedalmond;
+}
+
+div{
+    margin: 3px;
+}
+span{
+    font-size: 90px;
+}
+
+#y{
+    position: absolute;
+    transform: rotate(-60deg);
+    top:137px;
+    left: 130px;
+}
+#z{
+    position: absolute;
+    transform: rotate(-30deg);
+    top:47px;
+    left: 200px;
+}
+#n{
+    position: absolute;
+    top:7px;
+    left: 300px;
+}
+#a{
+    position: absolute;
+    transform: rotate(30deg);
+    top:47px;
+    left: 400px;
+}
+#i{
+    position: absolute;
+    transform: rotate(60deg);
+    top:137px;
+    left: 463px;
+}
+
+#main{
+    margin-top: 50px;
+    text-align: center;
+}
+#cont{
+    margin-top: 300px;
+    font-size: 40px;
+    text-align: center;
+}
+#result{
+    width: 20px;
+}

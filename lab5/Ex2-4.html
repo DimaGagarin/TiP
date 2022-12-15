@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5 Ex 2-4</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <IMG src="p1.png" width="90" name="pic1_1" onmouseover="selectOne(1)" onmouseout="selectOne(0)">
+    <IMG src="p2.png" width="90" name="pic1_2" onmouseover="selectOne(2)" onmouseout="selectOne(0)">
+    <IMG src="p3.png" width="90" name="pic1_3" onmouseover="selectOne(3)" onmouseout="selectOne(0)">
+    <br>
+    <img width="150" name="tempPicture">
+    <br>
+    <IMG src="p1.png" width="90" name="pic2_1" onmouseover="makeBigger(pic2_1)" onmouseout="makeSmaller(pic2_1)">
+    <IMG src="p2.png" width="90" name="pic2_2" onmouseover="makeBigger(pic2_2)" onmouseout="makeSmaller(pic2_2)">
+    <IMG src="p3.png" width="90" name="pic2_3" onmouseover="makeBigger(pic2_3)" onmouseout="makeSmaller(pic2_3)">
+    <br>
+    <IMG src="arrow.png" width="90" name="arrow_1" style="visibility:hidden">
+    <IMG src="arrow.png" width="90" name="arrow_2" style="visibility:hidden">
+    <IMG src="arrow.png" width="90" name="arrow_3" style="visibility:hidden">
+    <br>
+    <IMG src="p1.png" width="90" name="pic3_1" onmouseover="showArrow(arrow_1)" onmouseout="hideArrow(arrow_1)">
+    <IMG src="p2.png" width="90" name="pic3_2" onmouseover="showArrow(arrow_2)" onmouseout="hideArrow(arrow_2)">
+    <IMG src="p3.png" width="90" name="pic3_3" onmouseover="showArrow(arrow_3)" onmouseout="hideArrow(arrow_3)">
+    <br>
+</body>
+
+</html>

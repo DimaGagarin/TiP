@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <title>Lab 10 Ex 2</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="main">
+        <form name="form1">
+            <div id="inputData">
+                <table>
+                    <thead>
+                        Ввести данные сотрудников
+                    </thead>
+                    <tr>
+                        <td width="180">
+                            Фамилия
+                        </td>
+                        <td width="120">
+                            Дата принятия
+                        </td>
+                        <td width="150">
+                            Продолжительность контракта
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" value="Ivanov" name="name">
+                        </td>
+                        <td>
+                            <input type="date" value="2001-01-02" name="year">
+                        </td>
+                        <td>
+                            <input type="number" value="1" name="duration">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" value="Vasilkov" name="name">
+                        </td>
+                        <td>
+                            <input type="date" value="2000-03-15" name="year">
+                        </td>
+                        <td>
+                            <input type="number" value="7" name="duration">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" value="Petrov" name="name">
+                        </td>
+                        <td>
+                            <input type="date" value="1997-02-17" name="year">
+                        </td>
+                        <td>
+                            <input type="number" value="3" name="duration">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" value="Givirov" name="name">
+                        </td>
+                        <td>
+                            <input type="date" value="2024-02-29" name="year">
+                        </td>
+                        <td>
+                            <input type="number" value="999" name="duration">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="sendData">
+                <table>
+                    <thead>
+                        Получить данные сотрудников
+                    </thead>
+                    <tr>
+                        <td width="180">
+                            <input type="button" onclick="ContractYearTime(yearTime)" value="Year time">
+                        </td>
+                        <td width="120">
+                            <select name="yearTime">
+                                <option value="summer">Summer</option>
+                                <option value="autumn">Autumn</option>
+                                <option value="winter">Winter</option>
+                                <option value="spring">Spring</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" onclick="ContractQuartal(quartalTime)" value="Quartal">
+                        </td>
+                        <td>
+                            <select name="quartalTime">
+                                <option value="first">1th</option>
+                                <option value="second">2th</option>
+                                <option value="third">3th</option>
+                                <option value="fourth">4th</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" onclick="ContractDurationTime(startAt, endAt)" value="Duration">
+                        </td>
+                        <td>
+                            <input type="date" value="2000-08-08" name="startAt">
+                        </td>
+                        <td width="150">
+                            <input type="date" value="2002-04-10" name="endAt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" onclick="ContractEndAt(accurDate)" value="End at">
+                        </td>
+                        <td>
+                            <input type="date" value="2002-01-02" name="accurDate">
+                        </td>
+                    </tr>
+            </div>
+            </table>
+        </form>
+        <div id="recieveData">
+            <textarea id="resultArea"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
